@@ -5,12 +5,12 @@ class FacebookProfile {
     //ITERATION 0: Variable properties and constant properties.
     
     //Step 0: Create your attributes section--What is a facebook profile made of?
-    var bio = "6 foot 2, Giraffe from the Lou"
-   var userName = "Karlie Kloss"
-    var friendCount = 820000
-    let birthday = "Aug 3rd 1992"
-    var relationshipStatus = "Married"
-    var friendList = ["Josh"]
+//    var bio = "6 foot 2, Giraffe from the Lou"
+//    var userName = "Karlie Kloss"
+//    var friendCount = 820000
+//    let birthday = "Aug 3rd 1992"
+//    var relationshipStatus = "Married"
+//    var friendList = ["Josh"]
     
     //Step 1: Create pre-selected options for certain attribute(s).
     //forrelationshipStatus
@@ -30,7 +30,21 @@ class FacebookProfile {
     
     
     //ITERATION 1: Add an initializer so that we can create multiple facebook profiles.
+    var bio : String
+    var userName : String
+    var friendCount : Int
+    var birthday : String
+    var relationshipStatus : String
+    var friendList : [String]
     
+    init() {  //Initializers are like default settings
+        bio = ""
+        userName = ""
+        friendCount = 0
+        birthday = ""
+        relationshipStatus = optionOne
+        friendList = ["Me", "Myself", "I"]
+    }
     //Step 0: Generate an initializer based on the variable properties and constant properties.
     //Note: You may need to change the properties you created in Iteration 0!
     /*****YOUR CODE GOES HERE*****/
@@ -95,6 +109,8 @@ print(Karlie) //prints the object as __lldb_expr_27.FacebookProfile
 
 
 //Iteration 1 Test
+print(Karlie.friendCount)  //print friend count
+print(Karlie.relationshipStatus)
 
 
 //Iteration 2 Test
